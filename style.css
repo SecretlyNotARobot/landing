@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "halibut";
+    src: url("./Halibut-Regular.woff") format("woff");
+}
+
+@layer components {
+    .news-card {
+        @apply card w-96 carousel-item bg-secondary shadow-xl mb-1;
+    }
+    .news-card-body {
+        @apply card-body ;
+    }
+}
