@@ -9,7 +9,7 @@
 
 @layer components {
     .news-card {
-        @apply card w-96 carousel-item bg-secondary shadow-xl mb-1;
+        @apply card w-96 carousel-item bg-secondary/90 backdrop-blur-sm mb-5;
     }
     .news-card-body {
         @apply card-body ;
