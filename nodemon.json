@@ -1,0 +1,5 @@
+{
+  "extensions": [".js", ".css", ".html"],
+  "ignore": [],
+  "exec": "bun run build"
+}
