@@ -14,6 +14,10 @@ jobs:
         uses: xHyroM/setup-bun@v0.1.7
       - run: bun install
       - run: bun run build
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.0
+        with:
+          path: .gitignore
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
