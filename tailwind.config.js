@@ -5,10 +5,15 @@ module.exports = {
       fontFamily:{
           'display':['halibut'],
       },
-    extend: {},
+      extend: {
+          screens: {
+              'md': [{raw:'(min-width: 768px) and (pointer: fine)'} , {raw:'(min-width: 1023px) and (pointer: coarse)'} ],
+          },
+      },
   },
   plugins: [
       require("daisyui"),
       require("tailwind-scrollbar"),
+      require('tailwindcss-bg-patterns'),
   ],
 }
